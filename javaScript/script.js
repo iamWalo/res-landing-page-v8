@@ -7,26 +7,24 @@ window.addEventListener('load', () => {
 
 const menuOpen = document.querySelector('#menu-open');
 const menuClose = document.querySelector('#menu-close');
-const sidebar = document.querySelector('.sidebar');
-const sidebarButton = document.querySelector("div.header-button")
-const html = document.querySelector('html');
-// menuOpen.addEventListener('click', () => {
-//     sidebar.classList.add('show-sidebar');
-//     sidebarButton.style.display = 'block';
-//     sidebar.appendChild(sidebarButton);
-//     html.style.overflow = 'hidden';
-//     menuOpen.style.display = 'none';
-// })
-// menuClose.addEventListener('click', () => {
-//     sidebarButton.style.display = 'none';
-//     html.style.overflow = 'scroll';
-//     sidebar.classList.remove('show-sidebar');
-//     menuOpen.style.display = 'block';
-// })
+const navLinks = document.querySelector('div.nav-links');
+menuOpen.addEventListener('click', () => {
+    navLinks.style.display = 'flex';
+    navLinks.style.transform = 'translateY(0%)';
+    menuOpen.style.display = 'none';
+    menuClose.style.display = 'flex';
+
+})
+menuClose.addEventListener('click', () => {
+    navLinks.style.display = 'none';
+    menuOpen.style.display = 'flex';
+    menuClose.style.display = 'none';
+    navLinks.style.transform = 'translateY(-215%)';
+})
 // document.addEventListener('click', function (event) {
-//     const isClickInside = sidebar.contains(event.target) || menuOpen.contains(event.target);
+//     const isClickInside = navLinks.contains(event.target) || menuOpen.contains(event.target);
 //     if (!isClickInside) {
-//         sidebar.classList.remove('show-sidebar');
+//         nav - links.classList.remove('show-nav-links');
 //     }
 // })
 // vedios animations
@@ -46,7 +44,7 @@ videos.forEach(video => {
     });
 });
 // nav bar  animation
-const buttons = document.querySelectorAll('.sidebar nav ul li a');
+const buttons = document.querySelectorAll('nav-links nav ul li a');
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
         buttons.classList.remove('clicked');

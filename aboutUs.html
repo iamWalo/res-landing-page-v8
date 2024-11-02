@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>restaurant landing page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,12 +27,13 @@
     <div class="content">
         <section class="header">
             <div class="header-center">
-                <div class="logo">
-                    <img src="/images/logo.png" alt="logo">
+                <div class="logo hiden">
+                    <img src="./images/logo.png" alt="logo">
                     <a href="#">LOGO</a>
                 </div>
-                <div class="sidebar">
-                    <i class="fa fa-times" id="menu-close"></i>
+                <i class="fa fa-times" id="menu-close"></i>
+                <i class="fa fa-bars" id="menu-open"></i>
+                <div class="nav-links">
                     <nav>
                         <ul>
                             <li><a href="index.html">Home</a></li>
@@ -40,11 +42,11 @@
                             <li><a href="contactUs.html">Contact Us</a></li>
                         </ul>
                     </nav>
+                    <button class="btn ">Book a Table</button>
                 </div>
                 <div class="header-button">
-                    <button class="btn">Book a Table</button>
+                    <button class="btn ">Book a Table</button>
                 </div>
-                <i class="fa fa-bars" id="menu-open"></i>
             </div>
         </section>
         <section class="about-intro">

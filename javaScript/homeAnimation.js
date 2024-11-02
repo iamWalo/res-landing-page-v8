@@ -43,12 +43,14 @@ window.addEventListener('load', () => {
         setAnimationTo([menuContainerImage2], 'show-from-left');
         setAnimationTo(aboutSectionsImage, 'show-item');
         setAnimationTo(aboutSectionsText, 'show-item');
-        setAnimationTo(headerLis, 'show-item');
+        if (window.innerWidth > 875) {
+            setAnimationTo(headerLis, 'show-item');
+        }
         setTimeout(() => {
 
-            setAnimationTo(menuItems1, 'show-from-left', 150);
-            setAnimationTo(menuItems2, 'show-from-right', 150);
-            setAnimationTo(menuItems3, 'show-from-left', 150);
+            setAnimationTo(menuItems1, 'show-from-left', 100);
+            setAnimationTo(menuItems2, 'show-from-right', 100);
+            setAnimationTo(menuItems3, 'show-from-left', 100);
 
         }, 1000);
     }

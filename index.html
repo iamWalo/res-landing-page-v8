@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>restaurant landing page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,14 +24,15 @@
     </div>
     <div class="content">
 
-        <!-- <section class="header">
+        <section class="header">
             <div class="header-center">
                 <div class="logo hiden">
                     <img src="./images/logo.png" alt="logo">
                     <a href="#">LOGO</a>
                 </div>
-                <div class="sidebar">
-                    <i class="fa fa-times" id="menu-close"></i>
+                <i class="fa fa-times" id="menu-close"></i>
+                <i class="fa fa-bars" id="menu-open"></i>
+                <div class="nav-links">
                     <nav>
                         <ul>
                             <li><a href="index.html" class="clicked">Home</a></li>
@@ -39,13 +41,13 @@
                             <li><a href="contactUs.html">Contact Us</a></li>
                         </ul>
                     </nav>
+                    <button class="btn ">Book a Table</button>
                 </div>
                 <div class="header-button">
                     <button class="btn ">Book a Table</button>
                 </div>
-                <i class="fa fa-bars" id="menu-open"></i>
             </div>
-        </section> -->
+        </section>
         <section class="hero-container">
             <div class="hero-content">
                 <div class="text-section">
@@ -53,7 +55,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br> do eiusmod tempor incididunt ut
                         labore et dolore magna <br> aliqua.</p>
                     <div class="buttons">
-                        <button class="menu-btn btn">Menu</button>
+                        <button class="menu-btn btn"> <a href="recipes.html">Menu</a></button>
                         <button class="book-btn btn">Book a table</button>
                     </div>
                     <div class="social-icons">
@@ -71,12 +73,11 @@
             </div>
         </section>
         <section class="recipes-container">
-
             <div class="recipes-container-header">
                 <h2>Trendy <span class="red">Recipes</span></h2>
                 <button class="view-more btn "><a href="recipes.html">View more</a></button>
             </div>
-            <section class="trendy-recipes">
+            <div class="trendy-recipes">
                 <div class="recipes-grid">
                     <div class="recipe-card">
                         <div class="price-badge">
@@ -98,7 +99,7 @@
                         <h3>Chicken Fajita</h3>
                         <p><strong>Ingredients:</strong> Lorem ipsum dolor suit amet comecture adipiscing elit..</p>
                     </div>
-                    <div class="recipe-card hiden-in-resposive">
+                    <div class="recipe-card ">
                         <div class="price-badge">
                             <h4>$12</h4>
                         </div>
@@ -109,408 +110,404 @@
                         <p><strong>Ingredients:</strong> Lorem ipsum dolor suit amet comecture adipiscing elit..</p>
                     </div>
                 </div>
+            </div>
+            <div class="recipes-container-header">
+                <h2>featured <span>Recipes</span></h2>
+                <button class="view-more btn "><a href="recipes.html">View more</a></button>
+            </div>
+            <section class="featured-recipes">
 
-
-                <section class="featured-recipes">
-
-                    <div class="recipes-container-header">
-                        <h2>featured <span>Recipes</span></h2>
-                        <button class="view-more btn "><a href="recipes.html">View more</a></button>
+                <div class="recipes-grid">
+                    <div class="recipe-card">
+                        <div class=" days-badge">
+                            <h4>6 days</h4>
+                        </div>
+                        <div class="img-container">
+                            <img src="./images/food-img-4.png" alt="">
+                        </div>
+                        <h3>Algerian Couscous</h3>
+                        <p><strong>Ingredients:</strong> Lorem ipsum dolor suit amet comecture adipiscing elit..</p>
                     </div>
-
-                    <div class="recipes-grid">
-
-                        <div class="recipe-card">
-                            <div class=" days-badge">
-                                <h4>6 days</h4>
-                            </div>
-                            <div class="img-container">
-                                <img src="./images/food-img-4.png" alt="">
-                            </div>
-                            <h3>Algerian Couscous</h3>
-                            <p><strong>Ingredients:</strong> Lorem ipsum dolor suit amet comecture adipiscing elit..</p>
+                    <div class="recipe-card">
+                        <div class="days-badge">
+                            <h4>2 days</h4>
                         </div>
-                        <div class="recipe-card">
-                            <div class="days-badge">
-                                <h4>2 days</h4>
-                            </div>
-                            <div class="img-container">
-                                <img src="./images/food-img-1.png" alt="">
-                            </div>
-                            <h3>Lorem Ipsum</h3>
-                            <p><strong>Ingredients:</strong> Lorem ipsum dolor suit amet comecture adipiscing elit..</p>
+                        <div class="img-container">
+                            <img src="./images/food-img-1.png" alt="">
                         </div>
-                        <div class="recipe-card hiden-in-resposive">
-                            <div class="days-badge">
-                                <h4>2 days</h4>
-                            </div>
-                            <div class="img-container">
-                                <img src="./images/food-img-2.png" alt="">
-                            </div>
-                            <h3>Lorem Ipsum</h3>
-                            <p><strong>Ingredients:</strong> Lorem ipsum dolor suit amet comecture adipiscing elit..</p>
-                        </div>
+                        <h3>Lorem Ipsum</h3>
+                        <p><strong>Ingredients:</strong> Lorem ipsum dolor suit amet comecture adipiscing elit..</p>
                     </div>
-                </section>
-            </section>
-            <section class="menu-container" id="menu-container-1">
-                <h1 id="title">Our Daily Menu</h1>
-                <div class="menu-content">
-                    <div class="menu-image">
-                        <img src="./images/burger-big-img.png" alt="Burger Image">
-                    </div>
-                    <div class="menu-list">
-                        <h2 id="title">Burger</h2>
-                        <div class="menu-item">
-                            <img src="./images/burger-small-img.png" alt="Classic Veggie burger">
-                            <div class="menu-item-description">
-                                <h3>Classic Veggie burger</h3>
-                                <p>Grilled vegetable medley with herb pesto</p>
-                            </div>
-                            <span class="menu-item-price">35.00 DH</span>
+                    <div class="recipe-card ">
+                        <div class="days-badge">
+                            <h4>2 days</h4>
                         </div>
-                        <div class="menu-item">
-                            <img src="./images/burger-small-img.png" alt="Classic Veggie burger">
-                            <div class="menu-item-description">
-                                <h3>Classic Veggie burger</h3>
-                                <p>Grilled vegetable medley with herb pesto</p>
-                            </div>
-                            <span class="menu-item-price">35.00 DH</span>
+                        <div class="img-container">
+                            <img src="./images/food-img-2.png" alt="">
                         </div>
-                        <div class="menu-item">
-                            <img src="./images/burger-small-img.png" alt="Classic Veggie burger">
-                            <div class="menu-item-description">
-                                <h3>Classic Veggie burger</h3>
-                                <p>Grilled vegetable medley with herb pesto</p>
-                            </div>
-                            <span class="menu-item-price">35.00 DH</span>
-                        </div>
-                        <div class="menu-item">
-                            <img src="./images/burger-small-img.png" alt="Classic Veggie burger">
-                            <div class="menu-item-description">
-                                <h3>Classic Veggie burger</h3>
-                                <p>Grilled vegetable medley with herb pesto</p>
-                            </div>
-                            <span class="menu-item-price">35.00 DH</span>
-                        </div>
-                        <div class="menu-item">
-                            <img src="./images/burger-small-img.png" alt="Classic Veggie burger">
-                            <div class="menu-item-description">
-                                <h3>Classic Veggie burger</h3>
-                                <p>Grilled vegetable medley with herb pesto</p>
-                            </div>
-                            <span class="menu-item-price">35.00 DH</span>
-                        </div>
-                        <div class="menu-item">
-                            <img src="./images/burger-small-img.png" alt="Classic Veggie burger">
-                            <div class="menu-item-description">
-                                <h3>Classic Veggie burger</h3>
-                                <p>Grilled vegetable medley with herb pesto</p>
-                            </div>
-                            <span class="menu-item-price">35.00 DH</span>
-                        </div>
+                        <h3>Lorem Ipsum</h3>
+                        <p><strong>Ingredients:</strong> Lorem ipsum dolor suit amet comecture adipiscing elit..</p>
                     </div>
                 </div>
             </section>
-            <section class="menu-container" id="menu-container-2">
-                <div class="menu-content">
-                    <div class="menu-list">
-                        <h2 class="red" id="title">Pizza</h2>
-                        <div class="menu-item">
-                            <img src="./images/pizza-small-img.png" alt="Classic Veggie burger">
-                            <div class="menu-item-description">
-                                <h3>Classic Veggie burger</h3>
-                                <p>Grilled vegetable medley with herb pesto</p>
-                            </div>
-                            <span class="menu-item-price  red">30.00 DH</span>
+        </section>
+        <section class="menu-container" id="menu-container-1">
+            <h1 id="title">Our Daily Menu</h1>
+            <div class="menu-content">
+                <div class="menu-image hiden-in-mobile-responsive">
+                    <img src="./images/burger-big-img.png" alt="Burger Image">
+                </div>
+                <div id="menu-list-1" class="menu-list">
+                    <h2 id="title">Burger</h2>
+                    <div class="menu-item">
+                        <img src="./images/burger-small-img.png" alt="Classic Veggie burger">
+                        <div class="menu-item-description">
+                            <h3>Classic Veggie burger</h3>
+                            <p>Grilled vegetable medley with herb pesto</p>
                         </div>
-                        <div class="menu-item">
-                            <img src="./images/pizza-small-img.png" alt="Classic Veggie burger">
-                            <div class="menu-item-description">
-                                <h3>Classic Veggie burger</h3>
-                                <p>Grilled vegetable medley with herb pesto</p>
-                            </div>
-                            <span class="menu-item-price red">30.00 DH</span>
-                        </div>
-                        <div class="menu-item">
-                            <img src="./images/pizza-small-img.png" alt="Classic Veggie burger">
-                            <div class="menu-item-description">
-                                <h3>Classic Veggie burger</h3>
-                                <p>Grilled vegetable medley with herb pesto</p>
-                            </div>
-                            <span class="menu-item-price red">30.00 DH</span>
-                        </div>
-                        <div class="menu-item">
-                            <img src="./images/pizza-small-img.png" alt="Classic Veggie burger">
-                            <div class="menu-item-description">
-                                <h3>Classic Veggie burger</h3>
-                                <p>Grilled vegetable medley with herb pesto</p>
-                            </div>
-                            <span class="menu-item-price red">30.00 DH</span>
-                        </div>
-                        <div class="menu-item">
-                            <img src="./images/pizza-small-img.png" alt="Classic Veggie burger">
-                            <div class="menu-item-description">
-                                <h3>Classic Veggie burger</h3>
-                                <p>Grilled vegetable medley with herb pesto</p>
-                            </div>
-                            <span class="menu-item-price red">30.00 DH</span>
-                        </div>
-                        <div class="menu-item">
-                            <img src="./images/pizza-small-img.png" alt="Classic Veggie burger">
-                            <div class="menu-item-description">
-                                <h3>Classic Veggie burger</h3>
-                                <p>Grilled vegetable medley with herb pesto</p>
-                            </div>
-                            <span class="menu-item-price  red">30.00 DH</span>
-                        </div>
+                        <span class="menu-item-price">35.00 DH</span>
                     </div>
-                    <div class="menu-image">
-                        <img src="./images/pizza-big-img.png" alt="Burger Image">
+                    <div class="menu-item">
+                        <img src="./images/burger-small-img.png" alt="Classic Veggie burger">
+                        <div class="menu-item-description">
+                            <h3>Classic Veggie burger</h3>
+                            <p>Grilled vegetable medley with herb pesto</p>
+                        </div>
+                        <span class="menu-item-price">35.00 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/burger-small-img.png" alt="Classic Veggie burger">
+                        <div class="menu-item-description">
+                            <h3>Classic Veggie burger</h3>
+                            <p>Grilled vegetable medley with herb pesto</p>
+                        </div>
+                        <span class="menu-item-price">35.00 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/burger-small-img.png" alt="Classic Veggie burger">
+                        <div class="menu-item-description">
+                            <h3>Classic Veggie burger</h3>
+                            <p>Grilled vegetable medley with herb pesto</p>
+                        </div>
+                        <span class="menu-item-price">35.00 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/burger-small-img.png" alt="Classic Veggie burger">
+                        <div class="menu-item-description">
+                            <h3>Classic Veggie burger</h3>
+                            <p>Grilled vegetable medley with herb pesto</p>
+                        </div>
+                        <span class="menu-item-price">35.00 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/burger-small-img.png" alt="Classic Veggie burger">
+                        <div class="menu-item-description">
+                            <h3>Classic Veggie burger</h3>
+                            <p>Grilled vegetable medley with herb pesto</p>
+                        </div>
+                        <span class="menu-item-price">35.00 DH</span>
                     </div>
                 </div>
-            </section>
-            <section class="menu-container" id="menu-container-3">
-                <div class="menu-content">
-                    <div class="menu-image">
-                        <img src="./images/drink-big-img.png" alt="Burger Image">
+            </div>
+        </section>
+        <section class="menu-container" id="menu-container-2">
+            <div class="menu-content">
+                <div id="menu-list-2" class="menu-list">
+                    <h2 class="red" id="title">Pizza</h2>
+                    <div class="menu-item">
+                        <img src="./images/pizza-small-img.png" alt="Classic Veggie burger">
+                        <div class="menu-item-description">
+                            <h3>Classic Veggie burger</h3>
+                            <p>Grilled vegetable medley with herb pesto</p>
+                        </div>
+                        <span class="menu-item-price  red">30.00 DH</span>
                     </div>
-                    <div class="menu-list">
-                        <h2 id="title">Drink</h2>
-                        <div class="menu-item">
-                            <img src="./images/drink-small-img.png" alt="Classic Veggie burger">
-                            <div class="menu-item-description">
-                                <h3>Classic Veggie burger</h3>
-                                <p>Grilled vegetable medley with herb pesto</p>
-                            </div>
-                            <span class="menu-item-price  "> 12.00 DH</span>
+                    <div class="menu-item">
+                        <img src="./images/pizza-small-img.png" alt="Classic Veggie burger">
+                        <div class="menu-item-description">
+                            <h3>Classic Veggie burger</h3>
+                            <p>Grilled vegetable medley with herb pesto</p>
                         </div>
-                        <div class="menu-item">
-                            <img src="./images/drink-small-img.png" alt="Classic Veggie burger">
-                            <div class="menu-item-description">
-                                <h3>Classic Veggie burger</h3>
-                                <p>Grilled vegetable medley with herb pesto</p>
-                            </div>
-                            <span class="menu-item-price ">12.00 DH</span>
+                        <span class="menu-item-price red">30.00 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/pizza-small-img.png" alt="Classic Veggie burger">
+                        <div class="menu-item-description">
+                            <h3>Classic Veggie burger</h3>
+                            <p>Grilled vegetable medley with herb pesto</p>
                         </div>
-                        <div class="menu-item">
-                            <img src="./images/drink-small-img.png" alt="Classic Veggie burger">
-                            <div class="menu-item-description">
-                                <h3>Classic Veggie burger</h3>
-                                <p>Grilled vegetable medley with herb pesto</p>
-                            </div>
-                            <span class="menu-item-price ">12.00 DH</span>
+                        <span class="menu-item-price red">30.00 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/pizza-small-img.png" alt="Classic Veggie burger">
+                        <div class="menu-item-description">
+                            <h3>Classic Veggie burger</h3>
+                            <p>Grilled vegetable medley with herb pesto</p>
                         </div>
-                        <div class="menu-item">
-                            <img src="./images/drink-small-img.png" alt="Classic Veggie burger">
-                            <div class="menu-item-description">
-                                <h3>Classic Veggie burger</h3>
-                                <p>Grilled vegetable medley with herb pesto</p>
-                            </div>
-                            <span class="menu-item-price ">12.00 DH</span>
+                        <span class="menu-item-price red">30.00 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/pizza-small-img.png" alt="Classic Veggie burger">
+                        <div class="menu-item-description">
+                            <h3>Classic Veggie burger</h3>
+                            <p>Grilled vegetable medley with herb pesto</p>
                         </div>
-                        <div class="menu-item">
-                            <img src="./images/drink-small-img.png" alt="Classic Veggie burger">
-                            <div class="menu-item-description">
-                                <h3>Classic Veggie burger</h3>
-                                <p>Grilled vegetable medley with herb pesto</p>
-                            </div>
-                            <span class="menu-item-price ">12.00 DH</span>
+                        <span class="menu-item-price red">30.00 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/pizza-small-img.png" alt="Classic Veggie burger">
+                        <div class="menu-item-description">
+                            <h3>Classic Veggie burger</h3>
+                            <p>Grilled vegetable medley with herb pesto</p>
                         </div>
-                        <div class="menu-item">
-                            <img src="./images/drink-small-img.png" alt="Classic Veggie burger">
-                            <div class="menu-item-description">
-                                <h3>Classic Veggie burger</h3>
-                                <p>Grilled vegetable medley with herb pesto</p>
-                            </div>
-                            <span class="menu-item-price  ">12.00 DH</span>
-                        </div>
+                        <span class="menu-item-price  red">30.00 DH</span>
                     </div>
                 </div>
-            </section>
-            <section class="specials-section">
-                <h1><span class="highlight">Today's Specials</span><br>Exclusive Deals for You</h1>
-                <div class="specials-content">
-                    <div>
-                        <div class="video-container">
-                            <video class="myVideo" src="./images/specials-video-2.mp4" muted
-                                disablePictureInPicture></video>
+                <div class="menu-image hiden-in-mobile-responsive">
+                    <img src="./images/pizza-big-img.png" alt="Burger Image">
+                </div>
+            </div>
+        </section>
+        <section class="menu-container" id="menu-container-3">
+            <div class="menu-content">
+                <div class="menu-image hiden-in-mobile-responsive">
+                    <img src="./images/drink-big-img.png" alt="Burger Image">
+                </div>
+                <div id="menu-list-3" class="menu-list">
+                    <h2 id="title">Drink</h2>
+                    <div class="menu-item">
+                        <img src="./images/drink-small-img.png" alt="Classic Veggie burger">
+                        <div class="menu-item-description">
+                            <h3>Classic Veggie burger</h3>
+                            <p>Grilled vegetable medley with herb pesto</p>
                         </div>
+                        <span class="menu-item-price  "> 12.00 DH</span>
                     </div>
-                    <div>
-                        <div class="video-container">
-                            <video class="myVideo" src="./images/specials-video-1.mp4" muted
-                                disablePictureInPicture></video>
+                    <div class="menu-item">
+                        <img src="./images/drink-small-img.png" alt="Classic Veggie burger">
+                        <div class="menu-item-description">
+                            <h3>Classic Veggie burger</h3>
+                            <p>Grilled vegetable medley with herb pesto</p>
                         </div>
+                        <span class="menu-item-price ">12.00 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/drink-small-img.png" alt="Classic Veggie burger">
+                        <div class="menu-item-description">
+                            <h3>Classic Veggie burger</h3>
+                            <p>Grilled vegetable medley with herb pesto</p>
+                        </div>
+                        <span class="menu-item-price ">12.00 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/drink-small-img.png" alt="Classic Veggie burger">
+                        <div class="menu-item-description">
+                            <h3>Classic Veggie burger</h3>
+                            <p>Grilled vegetable medley with herb pesto</p>
+                        </div>
+                        <span class="menu-item-price ">12.00 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/drink-small-img.png" alt="Classic Veggie burger">
+                        <div class="menu-item-description">
+                            <h3>Classic Veggie burger</h3>
+                            <p>Grilled vegetable medley with herb pesto</p>
+                        </div>
+                        <span class="menu-item-price ">12.00 DH</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./images/drink-small-img.png" alt="Classic Veggie burger">
+                        <div class="menu-item-description">
+                            <h3>Classic Veggie burger</h3>
+                            <p>Grilled vegetable medley with herb pesto</p>
+                        </div>
+                        <span class="menu-item-price  ">12.00 DH</span>
                     </div>
                 </div>
-            </section>
-            <section class="testimonials-section">
-                <h1><span class="highlight">Testimonials</span><br>Hear from Our Clients</h1>
-                <div class="testimonials-content swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="testimonial-card ">
-                                <img src="./images/testimonial-img.png" alt="Templeton Peck">
-                                <div>
-                                    <div class="testimonial-header">
-                                        <h3>Hannibal Smith</h3>
-                                        <p>Food Critic at Culinary Delights</p>
-                                    </div>
-                                    <p class="testimonial-text">
-                                        « The dining experience was nothing short of exceptional. The flavors were
-                                        perfectly
-                                        balanced,
-                                        and
-                                        the service was top-notch. I can't wait to come back! »
-                                    </p>
-                                    <div class="testimonial-footer">
-                                        <img src="./images/logo.png" alt="">
-                                        <span>2024.08.15</span>
-                                    </div>
+            </div>
+        </section>
+        <section class="specials-section">
+            <h1><span class="highlight">Today's Specials</span><br>Exclusive Deals for You</h1>
+            <div class="specials-content">
+                <div>
+                    <div class="video-container">
+                        <video class="myVideo" src="./images/specials-video-2.mp4" muted
+                            disablePictureInPicture></video>
+                    </div>
+                </div>
+                <div>
+                    <div class="video-container">
+                        <video class="myVideo" src="./images/specials-video-1.mp4" muted
+                            disablePictureInPicture></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials-section">
+            <h1><span class="highlight">Testimonials</span><br>Hear from Our Clients</h1>
+            <div class="testimonials-content swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card ">
+                            <img src="./images/testimonial-img.png" alt="Templeton Peck">
+                            <div>
+                                <div class="testimonial-header">
+                                    <h3>Hannibal Smith</h3>
+                                    <p>Food Critic at Culinary Delights</p>
+                                </div>
+                                <p class="testimonial-text">
+                                    « The dining experience was nothing short of exceptional. The flavors were
+                                    perfectly
+                                    balanced,
+                                    and
+                                    the service was top-notch. I can't wait to come back! »
+                                </p>
+                                <div class="testimonial-footer">
+                                    <img src="./images/logo.png" alt="">
+                                    <span>2024.08.15</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="testimonial-card ">
-                                <img src="./images/testimonial-profile-img-2.png" alt="Templeton Peck">
-                                <div>
-                                    <div class="testimonial-header">
-                                        <h3>Michael Knight</h3>
-                                        <p>Food Critic at Culinary Delights</p>
-                                    </div>
-                                    <p class="testimonial-text">
-                                        « The dining experience was nothing short of exceptional. The flavors were
-                                        perfectly
-                                        balanced,
-                                        and
-                                        the service was top-notch. I can't wait to come back! »
-                                    </p>
-                                    <div class="testimonial-footer">
-                                        <img src="./images/logo.png" alt="">
-                                        <span>2024.08.15</span>
-                                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card ">
+                            <img src="./images/testimonial-profile-img-2.png" alt="Templeton Peck">
+                            <div>
+                                <div class="testimonial-header">
+                                    <h3>Michael Knight</h3>
+                                    <p>Food Critic at Culinary Delights</p>
+                                </div>
+                                <p class="testimonial-text">
+                                    « The dining experience was nothing short of exceptional. The flavors were
+                                    perfectly
+                                    balanced,
+                                    and
+                                    the service was top-notch. I can't wait to come back! »
+                                </p>
+                                <div class="testimonial-footer">
+                                    <img src="./images/logo.png" alt="">
+                                    <span>2024.08.15</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="testimonial-card ">
-                                <img src="./images/testimonial-img-3.png" alt="Templeton Peck">
-                                <div>
-                                    <div class="testimonial-header">
-                                        <h3>Templeton Peck</h3>
-                                        <p>Food Critic at Culinary Delights</p>
-                                    </div>
-                                    <p class="testimonial-text">
-                                        « The dining experience was nothing short of exceptional. The flavors were
-                                        perfectly
-                                        balanced,
-                                        and
-                                        the service was top-notch. I can't wait to come back! »
-                                    </p>
-                                    <div class="testimonial-footer">
-                                        <img src="./images/logo.png" alt="">
-                                        <span>2024.08.15</span>
-                                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card ">
+                            <img src="./images/testimonial-img-3.png" alt="Templeton Peck">
+                            <div>
+                                <div class="testimonial-header">
+                                    <h3>Templeton Peck</h3>
+                                    <p>Food Critic at Culinary Delights</p>
+                                </div>
+                                <p class="testimonial-text">
+                                    « The dining experience was nothing short of exceptional. The flavors were
+                                    perfectly
+                                    balanced,
+                                    and
+                                    the service was top-notch. I can't wait to come back! »
+                                </p>
+                                <div class="testimonial-footer">
+                                    <img src="./images/logo.png" alt="">
+                                    <span>2024.08.15</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="testimonial-card ">
-                                <img src="./images/testimonial-img-4.png" alt="Templeton Peck">
-                                <div>
-                                    <div class="testimonial-header">
-                                        <h3>Peter Thornton</h3>
-                                        <p>Food Critic at Culinary Delights</p>
-                                    </div>
-                                    <p class="testimonial-text">
-                                        « The dining experience was nothing short of exceptional. The flavors were
-                                        perfectly
-                                        balanced,
-                                        and
-                                        the service was top-notch. I can't wait to come back! »
-                                    </p>
-                                    <div class="testimonial-footer">
-                                        <img src="./images/logo.png" alt="">
-                                        <span>2024.08.15</span>
-                                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card ">
+                            <img src="./images/testimonial-img-4.png" alt="Templeton Peck">
+                            <div>
+                                <div class="testimonial-header">
+                                    <h3>Peter Thornton</h3>
+                                    <p>Food Critic at Culinary Delights</p>
+                                </div>
+                                <p class="testimonial-text">
+                                    « The dining experience was nothing short of exceptional. The flavors were
+                                    perfectly
+                                    balanced,
+                                    and
+                                    the service was top-notch. I can't wait to come back! »
+                                </p>
+                                <div class="testimonial-footer">
+                                    <img src="./images/logo.png" alt="">
+                                    <span>2024.08.15</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="testimonial-card ">
-                                <img src="./images/testimonial-img-5.png" alt="Templeton Peck">
-                                <div>
-                                    <div class="testimonial-header">
-                                        <h3>Capt. Trunk</h3>
-                                        <p>Food Critic at Culinary Delights</p>
-                                    </div>
-                                    <p class="testimonial-text">
-                                        « The dining experience was nothing short of exceptional. The flavors were
-                                        perfectly
-                                        balanced,
-                                        and
-                                        the service was top-notch. I can't wait to come back! »
-                                    </p>
-                                    <div class="testimonial-footer">
-                                        <img src="./images/logo.png" alt="">
-                                        <span>2024.08.15</span>
-                                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card ">
+                            <img src="./images/testimonial-img-5.png" alt="Templeton Peck">
+                            <div>
+                                <div class="testimonial-header">
+                                    <h3>Capt. Trunk</h3>
+                                    <p>Food Critic at Culinary Delights</p>
+                                </div>
+                                <p class="testimonial-text">
+                                    « The dining experience was nothing short of exceptional. The flavors were
+                                    perfectly
+                                    balanced,
+                                    and
+                                    the service was top-notch. I can't wait to come back! »
+                                </p>
+                                <div class="testimonial-footer">
+                                    <img src="./images/logo.png" alt="">
+                                    <span>2024.08.15</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial-section-footer">
-                    <div class="testimonial-dots">
-                        <span class="dot active"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                        <span class="dot"></span>
-                    </div>
+            </div>
+            <div class="testimonial-section-footer">
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
-            </section>
-            <section class="newsletter-section">
-                <div class="overlay">
-                    <h1>Get Your Promo Code by Joining <br> Our Newsletter</h1>
-                    <div class="input-container">
-                        <input type="email" placeholder="Enter your email">
-                        <button>Subscribe</button>
-                    </div>
+            </div>
+        </section>
+        <section class="newsletter-section">
+            <div class="overlay">
+                <h1>Get Your Promo Code by Joining <br> Our Newsletter</h1>
+                <div class="input-container">
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
                 </div>
-            </section>
-            <footer class="footer-section">
-                <div class="footer-top">
-                    <div class="logo footer-logo">
-                        <img src="./images/footer-logo.png" alt="logo">
-                        <a href="#">LOGO</a>
-                    </div>
-                    <ul class="footer-menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Trends</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Get in touch</a></li>
-                        <li><a href="#">FAQs</a></li>
-                    </ul>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
+            </div>
+        </section>
+        <footer class="footer-section">
+            <div class="footer-top">
+                <div class="logo footer-logo">
+                    <img src="./images/footer-logo.png" alt="logo">
+                    <a href="#">LOGO</a>
                 </div>
-                <div class="footer-bottom">
-                    <div class="footer-languages">
-                        <a href="#" class="language active-language">English</a>
-                        <a href="#" class="language">Arabic</a>
-                        <a href="#" class="language">French</a>
-                    </div>
-                    <div class="footer-copyright">
-                        &copy; 2024 Rich Technologies. All rights reserved.
-                    </div>
+                <ul class="footer-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Trends</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Get in touch</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-            </footer>
-
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-languages">
+                    <a href="#" class="language active-language">English</a>
+                    <a href="#" class="language">Arabic</a>
+                    <a href="#" class="language">French</a>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2024 Rich Technologies. All rights reserved.
+                </div>
+            </div>
+        </footer>
     </div>
 
 
@@ -522,6 +519,8 @@
         let testimenialsCount = 2;
         if (window.innerWidth > 1107) {
             testimenialsCount = 3;
+        } else if (window.innerWidth < 490) {
+            testimenialsCount = 1;
         }
         var swiper = new Swiper('.swiper-container', {
             loop: true,

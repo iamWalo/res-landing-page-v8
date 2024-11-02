@@ -30,7 +30,9 @@ body {
 .about-intro h1 {
     color: var(--white-clr);
     font-family: "Irish Grover";
-    font-size: 96px;
+    color: #FFF;
+    font-family: "Irish Grover";
+    font-size: 61px;
     font-style: normal;
     font-weight: 400;
     margin-bottom: 5px;
@@ -360,4 +362,42 @@ body {
     justify-content: center;
     position: relative;
     z-index: 44;
+}
+
+@media (max-width:875px) {
+    .our-story-section {
+        flex-direction: column;
+    }
+
+    .our-story-section-left-content {
+        text-align: center;
+        min-width: 100%;
+    }
+
+    .our-story-section-left-content h2 {
+        font-size: 31px;
+        margin-top: 50px;
+    }
+
+    .our-story-section-left-content h1 {
+        font-size: 45px;
+    }
+
+    .our-story-section-left-content p {
+        font-size: 25px;
+    }
+
+    .our-story-section-right-content {
+        min-width: 100%;
+        margin-left: 30px;
+    }
+
+    .space-gallery-section,
+    .about-sections {
+        display: none;
+    }
+
+    .about-intro {
+        transition: all 3s;
+    }
 }
